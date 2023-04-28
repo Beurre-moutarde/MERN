@@ -4,9 +4,8 @@ const db = require('./config/connection');
 const { authMiddleware } = require('./utils/auth');
 const { ApolloServer } = require("apollo-server-express");
 
-// const routes = require('./routes');
 
-const server =new ApolloServer({
+const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
@@ -29,7 +28,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__durname, "../client/build/index.html"));
 })
 
-// app.use(routes);
 
 db.once('open', () => {
   app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
