@@ -43,12 +43,9 @@ npm run develop
 
 #### Heroku Deployment
 
-[Link to deployed application](https://search-books-gql.herokuapp.com/)
 
+https://book-search-mernv2.herokuapp.com/
 
-#### App Screenshot
-
-![Screenshot](./client/public/sshot_demo.png)
 
 ## License
 
